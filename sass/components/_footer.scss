@@ -1,0 +1,120 @@
+.footer {
+    background-color: $box-color;
+    max-width: 1600px;
+    margin-right: auto;
+    margin-left: auto;
+
+
+    &__container {
+    @extend %container;
+    display: flex;
+    align-items: baseline;
+ }
+
+    &__network {
+    padding-left: 70px;
+    
+ }
+
+    &__title {
+    color: $bckground-color;
+    font-weight: 700;
+    line-height: 16px;
+    text-transform: uppercase;
+    padding-bottom: 20px;
+ }
+
+    & .contact__link {
+    font-style: normal;
+    font-weight: 400;
+    color: $bot-adress-color;
+    transition: color $animations;
+ }
+
+    .contact__link:focus,
+    .contact__link:hover {
+    color: $accent-color;
+ } 
+
+ /* -------------------FOOTER FORM--------------- */
+
+ &__mailing {
+    position: relative;
+    margin-left: 93px;
+ }
+
+ &__input {
+    color: rgba(255, 255, 255, 0.6);
+    background-color: $box-color;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+
+    height: 50px;
+    width: 358px;
+    padding-left: 16px;
+ }
+
+ &__form::placeholder {
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.03em;
+ }
+
+ &__btn {
+    border-radius: 4px;
+    border-style: hidden;
+    cursor: pointer;
+    margin-left: 12px;
+    padding: 10px 29px 10px 0;
+    min-width: 200px;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.06em;
+
+    color: $bckground-color;
+    background-color: $accent-color;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    transition: box-shadow $animations,
+    color $animations,
+    background-color $animations;
+ }
+
+ &__btn:focus,
+ &__btn:hover {
+    background-color: #188CE8;
+ }
+
+ &__icon {
+    position: absolute;
+    margin: 13px 28px 13px 10px;
+    right: 0;
+    bottom: 0;
+ }
+}
+
+.address{
+
+ &__list {
+    @extend %list;
+    padding-bottom: 60px;
+    }
+    
+ &__item {
+        margin-bottom: 9px;
+    }
+
+ &__link {
+    @extend %link;
+    color: $bckground-color;
+    font-style: normal;
+    font-weight: 400;
+    transition: color $animations;
+    }
+
+ &__link:hover,
+ &__link:focus {
+    color: $accent-color;
+    }
+}
+

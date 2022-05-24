@@ -1,0 +1,42 @@
+.clients{
+    @extend %section;
+    background-color: var(--bckground-color);
+    max-width: 1600px;
+    margin-right: auto;
+    margin-left: auto;
+
+ &__container{
+    @extend %container;
+ }
+
+ &__title{
+    @extend %section__title;
+ }
+
+ &__list{
+    @extend %list;
+    display: flex;
+    justify-content: center;
+ }
+
+ &__item + &__item {
+    margin-left: 30px;
+ }
+
+ &__link &__icon {
+    box-sizing: border-box;
+    border: 1px solid $soc-icons;
+    border-radius: 4px;
+    padding: 16px 32px;
+    width: 170px;
+    height: 92px;
+    fill: $soc-icons;
+    transition: fill $animations,
+    border-color $animations;
+ }
+
+ &__link &__icon:hover {
+    fill: $accent-color;
+    border-color: $accent-color;
+ }
+}

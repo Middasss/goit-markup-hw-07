@@ -1,0 +1,24 @@
+.logo {
+    color: $main-color;
+    font-family: $secondary-font-family;
+    font-size: 26px;
+    line-height: 1.2;
+    display: block;
+    width: 145px;
+
+    &__discoloration {
+            color: $accent-color;
+        }
+}
+
+.header__logo {
+    @extend %link;
+    margin-right: 93px;
+}
+
+.footer__logo {
+    @extend %link;
+    padding-top: 60px;
+    margin-bottom: 20px;
+    color: $bckground-color;
+}
